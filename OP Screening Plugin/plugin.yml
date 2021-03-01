@@ -1,0 +1,8 @@
+version: 1.0
+name: OPScreen
+main: com.vytruvius.plugin.Main
+author: Vytruvius
+description: A plugin to screen verified server operators
+commands:
+  ops:
+    description: Master command for OP Screen

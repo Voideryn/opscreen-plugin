@@ -1,0 +1,30 @@
+# Welcome to OPScreen v. 1.0
+#
+# This plugin is intended to create strict security measures 
+# to prevent against unintended operator usage. 
+#
+# Upon login, all operators verified in this file will be
+# prompted for the server's universal OP password, also set
+# within this file. The user will not be made an OP or have
+# access to move and send commands until this password is
+# entered correctly. All verified users are de-op'd upon
+# log out. This is to prevent against compromised accounts.
+#
+# Most importantly, this file contains a list of verified server
+# operators. When the /op command is run, the plugin will check
+# to see if the user is on the list. If they are not, the command
+# will be stopped from running. New verified operators can only be 
+# granted access through this file. There is no option in-game to add
+# a new operator to the verified list. This ensures maximum security. 
+
+# Enter the user's UUID. Can be fetched using /ops uuid|userid [name]
+# For example, the UUID of Notch:
+#   - 069a79f4-44e9-4726-a5be-fca90e38aaf5
+OPList:
+
+# Set the server's universal OP password to be entered upon login
+password: ''
+
+# Set to true if you would like the server to prompt verified OP's
+# for the universal password upon login. Provides additional security.
+passwordEnabled: false
